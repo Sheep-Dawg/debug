@@ -19,6 +19,7 @@ Instructions:
     * Verify the spelling of the variable name in both the declaration and the usage.
     * Ensure that the variable is declared before it's used.
 */
+let myVariable = "looky here";
 //console.log(myVariable); // ReferenceError: myVariable is not defined
 
 // 3. TypeError: greeting is not a function
@@ -41,7 +42,9 @@ Instructions:
     * Make sure the variable has been assigned an object before you attempt to access its properties.
     * If you expect the variable to hold an object, you may need to add code that assigns an object to the variable.
 */
-let obj;
+let obj = {
+  property: 1,
+};
 //console.log(obj.property); // TypeError: Cannot read property 'property' of undefined
 
 // 5. Incorrect Object Concatenation
@@ -53,8 +56,8 @@ Instructions:
     * Remember that the console.log() function can take multiple arguments, and will display them all.
 */
 const user = {
-    name: "John",
-    age: 30,
+  name: "John",
+  age: 30,
 };
 
 //console.log("User info: " + user); // Output: User info: [object Object]
@@ -68,5 +71,5 @@ Instructions:
     * Use functions like `parseInt()` or `parseFloat()` to convert strings to numbers.
     * Be aware that if the string that is being converted to a number, is not a number, then the result will be NaN.
 */
-let num = "10";
+let num = 10;
 //console.log(num + 5); // "105"
